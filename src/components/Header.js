@@ -6,14 +6,14 @@ export const Header = () => (
       <Link to="/" className="navbar-item logo">
         Smartbrain
       </Link>
-      <div className="navbar-left-block">
-        <li className="navbar-item navbar-item-left">
-          <Link to="/signin" className="nav-item-link">
+      <div className="navbar-left-bloc">
+        <li className="navbar-item">
+          <Link to="/signin" className="navbar-item-link">
             sign in
           </Link>
         </li>
-        <li className="navbar-item navbar-item-left">
-          <Link to="/signup" className="nav-item-link nav-item-selected">
+        <li className="navbar-item">
+          <Link to="/signup" className="navbar-item-link navbar-item-selected">
             sign up
           </Link>
         </li>
