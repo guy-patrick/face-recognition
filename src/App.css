@@ -248,3 +248,19 @@ ul {
 .reset-link {
   color: inherit;
 }
+
+/* --------------
+------5. Reset passwword */
+
+.forgot-title {
+  font-size: 42px;
+  line-height: 1.167;
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  .forgot-title {
+    width: 60%;
+    margin: auto;
+  }
+}

@@ -2,6 +2,8 @@
 import { Header } from "./components/Header";
 import { Homepage } from "./pages/Homepage";
 import { Signin } from "./components/Signin";
+import { Signup } from "./components/Signup";
+import { ResetPassword } from "./components/ResetPassword";
 // import { ImageLinkForm } from "./components/ImageLinkForm";
 // import { Rank } from "./components/Rank";
 // import { FaceRecognition } from "./components/FaceRecognition";
@@ -67,6 +69,8 @@ export const App = () => {
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/signin" component={Signin} />
+        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/forgot-password" component={ResetPassword} />
       </Switch>
       {/* {<Rank />
       <ImageLinkForm handleSubmit={handleSubmit} handleChange={handleChange} />

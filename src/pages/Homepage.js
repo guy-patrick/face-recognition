@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CustomButton } from "../components/CustomButton";
 
 export const Homepage = () => (
@@ -7,7 +8,9 @@ export const Homepage = () => (
     <p className="homepage-subtitle">
       Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
     </p>
-    <CustomButton title="Register" classes="homepage-btn" />
+    <Link to="/signup">
+      <CustomButton title="Register" classes="homepage-btn" />
+    </Link>
     <p className="invite-text">Discover the experience</p>
   </div>
 );
