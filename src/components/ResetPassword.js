@@ -1,16 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { CustomForm } from "./CustomForm";
+// import { Link } from "react-router-dom";
+import CustomForm from "./CustomForm";
 
-export const ResetPassword = () => {
+function ResetPassword() {
   const [email, setEmail] = useState("");
 
   const handleChange = (event) => {
     setEmail(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log("reset password !");
   };
 
@@ -38,4 +38,6 @@ export const ResetPassword = () => {
       </div>
     </div>
   );
-};
+}
+
+export default ResetPassword;

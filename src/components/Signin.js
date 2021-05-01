@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { CustomForm } from "./CustomForm";
+import CustomForm from "./CustomForm";
 
-export const Signin = () => {
+function Signin() {
   const [credentials, setCredentials] = useState({
     email: "",
     password: "",
@@ -54,4 +54,6 @@ export const Signin = () => {
       </div>
     </div>
   );
-};
+}
+
+export default Signin;
